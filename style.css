@@ -1,0 +1,378 @@
+/* ===========================================
+VARIABLES
+=========================================== */
+:root{
+  --green: #30E310;
+  --blue: #450AF5;
+  --greendark: #56B40F;
+}
+
+/* ===========================================
+FUENTES
+=========================================== */
+@font-face {
+  font-family: 'poppins-regular';
+  font-weight: normal;
+  font-style: normal;
+  src: 
+      url('fonts/Poppins-Regular.ttf') format('truetype'),
+      url('fonts/Poppins-Regular.woff') format('woff'),
+      url('fonts/Poppins-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'poppins-medium';
+  font-weight: normal;
+  font-style: normal;
+  src: 
+      url('fonts/Poppins-Medium.ttf') format('truetype'),
+      url('fonts/Poppins-Medium.woff') format('woff'),
+      url('fonts/Poppins-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'poppins-bold';
+  font-weight: normal;
+  font-style: normal;
+  src: 
+  url('fonts/Poppins-Bold.ttf') format('truetype'),
+  url('fonts/Poppins-Bold.woff') format('woff'),
+  url('fonts/Poppins-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'poppins-semi';
+  font-weight: normal;
+  font-style: normal;
+  src: 
+  url('fonts/Poppins-SemiBold.ttf') format('truetype'),
+  url('fonts/Poppins-SemiBold.woff') format('woff'),
+  url('fonts/Poppins-SemiBold.woff2') format('woff2');
+}
+
+/* ===========================================
+RESET / NORMALIZACION
+=========================================== */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+* ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ===========================================
+ESTILOS GLOBALES
+=========================================== */
+body{
+  background-color: var(--green);
+}
+
+html *{
+  font-family: 'poppins-regular';
+}
+
+/* ===========================================
+UTILIDADES
+=========================================== */
+
+/* ===========================================
+COMPONENTES / SECCIONES
+========================================== */
+.header-principal{
+  padding-top: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--blue);
+  .container-header{
+    position: relative;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    h1{
+      font-size: 14px;
+    }
+    .menu-header{
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        a{
+          text-decoration: none;
+          font-size: 12px;
+          color: black;
+        }
+      }
+    }
+    .block{
+      display: block;
+    }
+    .menu-desplegable{
+      padding: 2px;
+      span{
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        display: block;
+        margin: 2px;
+      }
+    }
+  }
+  .image-hero-mobile{
+    width: 50%;
+  }
+}
+
+.main-principal{
+  .container-main-principal{
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    h2{
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .descrip-cambio-climatico{
+      padding: 15px;
+      font-size: 10px;
+      background-image: linear-gradient(to right, var(--blue), var(--greendark));
+      border-radius: 30px;
+      color: white;
+    }
+  }
+}
+
+.main-causas{
+  .container-main-causas{
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    h2{
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .causas-cambio-climatico{
+      padding: 15px;
+      font-size: 10px;
+      background-image: linear-gradient(to right, var(--blue), var(--greendark));
+      border-radius: 30px;
+      color: white;
+    }
+  }
+}
+
+.main-consecuencias{
+  .container-main-consecuencias{
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .consecuencias-cambio-climatico{
+    padding: 15px;
+    font-size: 10px;
+    background-image: linear-gradient(to right, var(--blue), var(--greendark));
+    border-radius: 30px;
+    color: white;
+    .lista-consecuencias{
+      list-style: inside;
+      margin-top: 10px;
+    }
+  }
+}
+
+.main-paises-afectados{
+  .container-main-paises-afectados{
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .paises{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    article{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--blue);
+      border-radius: 10px;
+      padding: 5px 10px 5px 10px;
+      background-color: rgba(195, 158, 158, 0.5);
+      box-shadow: 0px 0px 8px 1px white;
+      h3{
+        font-size: 12px;
+      }
+      p{
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.main-acciones{
+  h2{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .container-main-acciones{
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    .protocolo-kioto{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      border-bottom: 3px solid var(--blue);
+      padding-bottom: 20px;
+      h3{
+        font-size: 13px;
+        color: var(--blue);
+      }
+      article{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid var(--blue);
+        padding: 5px 10px;
+        border-radius: 10px;
+        background-color: rgba(195, 158, 158, 0.5);
+        box-shadow: 0px 0px 8px 1px white;
+        h4{
+          font-size: 12px;
+        }
+        p{
+          font-size: 10px;
+        }
+      }
+    }
+    .acuerdo-paris{
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid var(--blue);
+      h3{
+        font-size: 13px;
+        color: var(--blue);
+      }
+      article{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid var(--blue);
+        padding: 5px 10px;
+        border-radius: 10px;
+        background-color: rgba(195, 158, 158, 0.5);
+        box-shadow: 0px 0px 8px 1px white;
+        h4{
+          font-size: 12px;
+        }
+        p{
+          font-size: 10px;
+          text-align: center;
+        }
+        .text-left{
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.main-soluciones{
+  .container-main-soluciones{
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 3px solid var(--blue);
+    padding-bottom: 20px;
+    h2{
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 13px;
+      color: var(--blue);
+      margin-bottom: 20px;
+    }
+    h3{
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .soluciones{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      article{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid var(--blue);
+        padding: 5px 10px;
+        border-radius: 10px;
+        background-color: rgba(195, 158, 158, 0.5);
+        box-shadow: 0px 0px 8px 1px white;
+        h4{
+          font-size: 12px;
+        }
+        p{
+          font-size: 10px;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.main-conclusion{
+  .container-conclusion{
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    h2{
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    article{
+      font-size: 10px;
+      color: black;
+      border: 1px solid var(--blue);
+      border-radius: 10px;
+      background-image: radial-gradient(aqua, yellow);
+      padding: 5px 10px;
+      box-shadow: 0px 0px 8px 1px white;
+    }
+  }
+}
+
+/* ===========================================
+BREAKPOINTS (MEDIA QUERIES)
+========================================== */
