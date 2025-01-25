@@ -475,7 +475,7 @@ BREAKPOINTS (MEDIA QUERIES)
   }
 }
 
-@media(width >= 1536px){
+@media(width >= 1512px){
   .header-principal{
     padding-top: 20px;
   }
@@ -522,7 +522,7 @@ BREAKPOINTS (MEDIA QUERIES)
   }
 }
 
-@media(width >= 1536px){
+@media(width >= 1512px){
   .main-principal .container-main-principal h2{
     font-size: 40px;
     margin-bottom: 60px;
@@ -558,7 +558,7 @@ BREAKPOINTS (MEDIA QUERIES)
   }
 }
 
-@media(width >= 1536px){
+@media(width >= 1512px){
   .main-causas .container-main-causas h2{
     font-size: 40px;
     margin-bottom: 60px;
@@ -597,7 +597,7 @@ BREAKPOINTS (MEDIA QUERIES)
   }
 }
 
-@media (width >= 1536px){
+@media (width >= 1512px){
   .main-consecuencias .container-main-consecuencias h2{
       font-size: 40px;
       margin-bottom: 60px;
@@ -653,7 +653,7 @@ BREAKPOINTS (MEDIA QUERIES)
   }
 }
 
-@media(width >= 1536px){
+@media(width >= 1512px){
   .main-paises-afectados .container-main-paises-afectados h2{
     font-size: 40px;
     margin-bottom: 60px;
@@ -751,7 +751,7 @@ BREAKPOINTS (MEDIA QUERIES)
   }
 }
 
-@media(width >= 1536px){
+@media(width >= 1512px){
   .main-acciones h2{
     max-width: 95%;
     margin-left: auto;
@@ -844,7 +844,7 @@ BREAKPOINTS (MEDIA QUERIES)
   }
 }
 
-@media(width >= 1536px){
+@media(width >= 1512px){
   .main-soluciones .container-main-soluciones h2{
     font-size: 40px;
     margin-bottom: 60px;
@@ -891,7 +891,7 @@ BREAKPOINTS (MEDIA QUERIES)
   }
 }
 
-@media (width >= 1536px) {
+@media (width >= 1512px) {
   .main-conclusion .container-conclusion h2{
     font-size: 40px;
     margin-bottom: 60px;
@@ -922,7 +922,7 @@ BREAKPOINTS (MEDIA QUERIES)
   }
 }
 
-@media(width >= 1536px){
+@media(width >= 1512px){
   footer p{
     font-size: 21px;
     font-family: 'poppins-medium';
