@@ -380,6 +380,113 @@ COMPONENTES / SECCIONES
   }
 }
 
+#main-juego{
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  h2{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  #container-letras-canvas{
+    margin-right: 3%;
+    margin-left: 3%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    #container-letras{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        #pregunta{
+          text-align: center;
+          font-size: 10px;
+          color: white;
+        }
+        #palabra-correcta{
+          display: flex;
+          gap: 7px;
+          font-size: 10px;
+          color: yellow;
+        }
+        #palabra-incorrecta{
+          font-size: 10px;
+          color: red;
+        }
+    }
+    #container-canvas{
+      width: 55%;
+      #dibujo-ahorcado{
+          border: 3px solid var(--blue);
+          background-color: rgba(0, 0, 0, 0.3);
+          width: 100%;
+          box-shadow: 0px 5px 25px 0px inset rgb(8, 210, 25);
+      }
+    }
+  }
+  #container-input-restart{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    #container-input{
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      #input-letra{
+        font-size: 10px;
+        color: whitesmoke;
+        border: 0;
+        background-color: rgba(223, 15, 15, 0.7);
+        border-radius: 5px;
+        outline: none;
+        padding: 10px;
+      }
+      #input-letra::placeholder{
+        color: black;
+        font-size: 8px;
+      }
+      #adivina-palabra{
+        background-color: black;
+        border: 1px solid var(--blue);
+        box-shadow: 0px 0px 10px white;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 8px;
+        color: white;
+      }
+    }
+    #container-restart{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      #message{
+        font-size: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        color: var(--blue);
+      }
+      #restart-button{
+        background-color:red;
+        border: 2px solid black;
+        box-shadow: 0px 0px 10px 0px white;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 10px;
+        max-width: max-content;
+        display: none;
+      }
+    }
+  }
+}
+
 footer{
   max-width: 95%;
   margin-left: auto;
@@ -913,6 +1020,101 @@ BREAKPOINTS (MEDIA QUERIES)
 @media(width >= 1920px){
   .main-conclusion .container-conclusion{
     max-width: 90%;
+  }
+}
+
+@media(width >= 768px){
+  #main-juego h2{
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  #main-juego #container-letras-canvas #container-letras{
+    gap: 20px;
+  }
+  #main-juego #container-letras-canvas #container-letras #pregunta{
+    font-size: 16px;
+  }
+  #main-juego #container-letras-canvas #container-letras #palabra-correcta{
+    font-size: 16px;
+  }
+  #main-juego #container-letras-canvas #container-letras #palabra-incorrecta{
+    font-size: 16px;
+  }
+  #main-juego #container-input-restart{
+    gap: 40px;
+  }
+  #main-juego #container-input-restart #container-input{
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+  #main-juego #container-input-restart #container-input #input-letra{
+    padding: 10px 70px 10px 10px;
+    font-size: 16px;
+  }
+  #main-juego #container-input-restart #container-input #input-letra::placeholder{
+    font-size: 16px;
+  }
+  #main-juego #container-input-restart #container-input #adivina-palabra{
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  #main-juego #container-input-restart #container-restart{
+    gap: 30px;
+  }
+  #main-juego #container-input-restart #container-restart #message{
+    font-size: 16px;
+  }
+  #main-juego #container-input-restart #container-restart #restart-button{
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media(width >= 1512px){
+  #main-juego h2{
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+  #main-juego #container-letras-canvas #container-letras{
+    gap: 40px;
+  }
+  #main-juego #container-letras-canvas #container-letras #pregunta{
+    font-size: 21px;
+    font-family: 'poppins-semi';
+  }
+  #main-juego #container-letras-canvas #container-letras #palabra-correcta{
+    font-size: 21px;
+    font-family: 'poppins-semi';
+  }
+  #main-juego #container-letras-canvas #container-letras #palabra-incorrecta{
+    font-size: 21px;
+    font-family: 'poppins-semi';
+  }
+  #main-juego #container-input-restart{
+    gap: 60px;
+  }
+  #main-juego #container-input-restart #container-input #input-letra{
+    padding: 10px 90px 10px 10px;
+    font-size: 21px;
+    font-family: 'poppins-semi';
+  }
+  #main-juego #container-input-restart #container-input #input-letra::placeholder{
+    font-size: 21px;
+    font-family: 'poppins-semi';
+  }
+  #main-juego #container-input-restart #container-input #adivina-palabra{
+    padding: 15px 30px;
+    font-size: 21px;
+    font-family: 'poppins-semi';
+  }
+  #main-juego #container-input-restart #container-restart #message{
+    font-size: 21px;
+    font-family: 'poppins-semi';
+  }
+  #main-juego #container-input-restart #container-restart #restart-button{
+    padding: 10px 20px;
+    font-size: 21px;
+    font-family: 'poppins-semi';
   }
 }
 

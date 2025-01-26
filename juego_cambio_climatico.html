@@ -1,0 +1,94 @@
+<!--Obligatorio para que el navegador lo lea perfecto en lenguaje HTML-->
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!--Aqui el titulo para los buscadores-->
+  <title>Cambio climatico</title>
+  
+  <!--Descripcion que sale al buscarlo en el navegador-->
+  <meta name="description" content="cambio_climatico">
+
+  <!--Palabras claves para los buscadores en navegadores-->
+  <meta name="keywords" content="consencuencias, cambio,climatico, trabajo, primaria">
+
+  <!--Autor de la pagina-->
+  <meta name="autor" content="Fran">
+
+  <!--Añadimos la hoja javascript-->
+  <script defer type="module" src="./main.js"></script>
+
+  <!--Añadimos la hojas de estilos-->
+  <link rel="stylesheet" href="./style.css">
+
+  <!--Favicon de la pagina(icono)-->
+  <link rel="icon" type="image/svg+xml" href="./icons/icon-web.png" />
+
+  <!--Codificacion-->
+  <meta charset="UTF-8">
+
+  <!--Para que la web sea resposinve(El tamaño segun el dispositivo)-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Para algunos navegadores moviles(Color parte de arriba del HEADER)-->
+  <meta name="theme-color" content="FF0000">
+</head>
+
+<body>
+  <header class="header-principal" >
+    <section class="container-header">
+      <h1 class="title-mobile" >El cambio climático a nivel mundial</h1>
+      <nav class="menu-header">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="causas.html">Causas</a></li>
+          <li><a href="consecuencias.html">Consecuencias</a></li>
+          <li><a href="paises_afectados.html">Regiones mas afectadas</a></li>
+          <li><a href="acciones_internacionales.html">Acciones Internacionales</a></li>
+          <li><a href="soluciones.html">Soluciones</a></li>
+          <li><a href="conclusion.html">Conclusion</a></li>
+          <li><a href="juego_cambio_climatico.html">Juego</a></li>
+        </ul>
+      </nav>
+      <button class="menu-desplegable" >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </section>
+    <img class="image-hero-mobile" src="img/image-hero.webp" alt="">
+    <img class="image-hero-desktop" src="img/image-header.png" alt="" >
+    <section class="titles-hero-desktop">
+      <h1 class="title1-desktop">El cambio climatico a nivel mundial</h1>
+      <h2 class="title2-desktop">Actúa hoy para proteger el planeta mañana</h2>
+    </section>
+  </header>
+  <main id="main-juego">
+    <h2>Juego</h2>
+    <section id="container-letras-canvas">
+      <div id="container-letras">
+        <div id="pregunta"></div>
+        <div id="palabra-correcta"></div>
+        <div id="palabra-incorrecta"></div>
+      </div>
+      <div id="container-canvas">
+        <canvas id="dibujo-ahorcado"></canvas>
+      </div>
+    </section>
+    <section id="container-input-restart">
+      <div id="container-input">
+        <input id="input-letra" type="text" maxlength="1" placeholder="Introduce la palabra">
+        <button id="adivina-palabra">Prueba suerte</button>
+      </div>
+      <div id="container-restart">
+        <div id="message"></div>
+        <button id="restart-button">Reinicio</button>
+      </div>
+    </section>
+  </main>
+  <footer> 
+    <p>&copy;2025 Cambio Climático</p>
+  </footer>
+</body>
+</html>
+
