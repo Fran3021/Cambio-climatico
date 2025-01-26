@@ -414,7 +414,7 @@ COMPONENTES / SECCIONES
           display: flex;
           gap: 7px;
           font-size: 10px;
-          color: yellow;
+          color: black;
         }
         #palabra-incorrecta{
           font-size: 10px;
