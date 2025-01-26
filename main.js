@@ -20,12 +20,12 @@ let buttonRestart = document.getElementById('restart-button')
 
 
 //variables de musica
-let musicaFondo = new Audio ('./music/musica-fondo-ahorcado.wav')
-musicaFondo.volume = 0.0
+let musicaFondo = new Audio ('./music/musica-fondo.mp3')
+musicaFondo.volume = 0.3
 musicaFondo.loop = true
 
 let correctWord = new Audio ('./music/palabra-correcta.wav')
-correctWord.volume = 0.7
+correctWord.volume = 1.0
 correctWord.loop = false
 
 let wrongWord = new Audio ('./music/wrong-words.wav')
@@ -41,77 +41,77 @@ win.volume = 0.1
 win.loop = false
 
 //creamos un array con las preguntas en distintos niveles de dificultad
-let arrayPreguntasFacil = ['¿Cual el personaje principal en el juego Poppy PlayTime?',
-    '¿Como se llama el juego que se gana desactivando la spike?',
-    '¿Cual es juego que gano el goty en el año 2022?',
-    '¿Como se llama el proceso por el cual las plantas expulsan oxigeno?',
-    '¿En que oceano se hundio el Titanic?',
-    '¿Líquido transparente y vital para los seres vivos?',
-    '¿Verdura verde con forma de árbol pequeño?',
-    '¿Fruta de color amarillo y alargada?',
-    '¿Animal que dice "miau"?',
-    '¿Parte del cuerpo usada para escuchar?',
+let arrayPreguntasFacil = ['¿Qué gas producen los coches que contamina el aire?',
+    '¿Cómo se llama el calentamiento de la Tierra por la contaminación?',
+    '¿Qué podemos plantar para limpiar el aire?',
+    '¿Qué debemos usar menos para ahorrar energía: ¿la bicicleta o el coche?',
+    '¿Qué material reciclamos de las botellas?',
+    '¿Qué gas necesitamos para respirar?',
+    '¿Qué debemos apagar cuando no lo usamos para ahorrar energía?',
+    '¿Cómo se llaman los bloques de hielo que se derriten por el calor?',
+    '¿Qué animal está en peligro por el derretimiento del Ártico?',
+    '¿Qué usamos para cargar nuestros dispositivos?',
 ]
 
-let arrayPreguntasMedio = ['¿Animal que es el más grande en la Tierra?',
-    '¿Elemento químico cuyo símbolo es "O"?',
-    '¿País donde se encuentra la Torre Eiffel?',
-    '¿Deporte que se juega con una pelota y canasta?',
-    '¿Reptil que puede cambiar de color?',
-    '¿Moneda usada en Japón?',
-    '¿Cual es el metal más común en los cables eléctricos?',
-    '¿Animal que pone huevos y tiene plumas?',
-    '¿País sudamericano famoso por su carnaval?',
-    '¿Mineral que compone los huesos?',
+let arrayPreguntasMedio = ['¿Qué gas de efecto invernadero se produce al quemar carbón o petróleo?',
+    '¿Qué recurso natural necesitamos para producir energía solar?',
+    '¿Qué proceso de las plantas ayuda a limpiar el aire?',
+    '¿Qué tipo de bolsas de plástico debemos usar para cuidar el medio ambiente?',
+    '¿Cómo se llama el fenómeno que ocurre cuando sube el nivel del mar?',
+    '¿Qué podemos reciclar del papel para evitar cortar más árboles?',
+    '¿Qué transporte no contamina y usa pedales?',
+    '¿Qué recurso natural usamos para producir energía eólica?',
+    '¿Qué debemos ahorrar para evitar la sequía?',
+    '¿Qué planeta estamos tratando de proteger con el reciclaje?',
 ]
 
-let arrayPreguntasDificil = [' ¿Héroe mitológico griego que mató a Medusa?',
-    '¿Término usado para referirse al estudio de las estrellas?',
-    '¿Sistema de gobierno donde el poder está en una sola persona?',
-    '¿País de origen de la empresa Samsung?',
+let arrayPreguntasDificil = ['¿Cómo se llama el proceso por el cual la Tierra se calienta debido a ciertos gases?',
+    ' ¿Qué gas producido por las vacas contribuye al calentamiento global?',
+    '¿Qué capa de la atmósfera protege la Tierra de los rayos solares dañinos?',
+    '¿Cómo se llama el fenómeno en el que los glaciares se derriten rápidamente?',
     '¿Cómo se llama el proceso de conversión de vapor a líquido?',
-    '¿Año de la caída del muro de Berlín?',
+    '¿Qué metal reciclamos de las latas para reducir la contaminación?',
     '¿Partícula subatómica sin carga?',
-    '¿Especie de ave conocida por su capacidad para imitar sonidos?',
-    '¿Estado de la materia que es más abundante en el universo?',
-    '¿Instrumento de viento utilizado en música clásica con cuerpo de madera?',
+    '¿Qué energía renovable usamos con paneles solares?',
+    '¿Qué tipo de combustibles producen más contaminación al quemarse?',
+    '¿Qué acuerdo internacional busca reducir el cambio climático?',
 ]
 
 //creamos un array con las respuestas en distintos niveles de dificultad
-let arrayRespuestasFacil = ['huggywuggy',
-    'valorant',
-    'eldenring',
-    'fotosintesis',
-    'atlantico',
-    'agua',
-    'brocoli',
-    'platano',
-    'gato',
-    'oreja',
-]
-
-let arrayRespuestasMedio = ['ballena',
+let arrayRespuestasFacil = ['dioxidodecarbono',
+    'calentamientoglobal',
+    'arboles',
+    'coche',
+    'plastico',
     'oxigeno',
-    'francia',
-    'baloncesto',
-    'camaleon',
-    'yen',
-    'cobre',
-    'gallina',
-    'brasil',
-    'calcio',
+    'luz',
+    'glaciares',
+    'osopolar',
+    'electricidad',
 ]
 
-let arrayRespuestasDificil = ['perseo',
-    'astronomia',
-    'dictadura',
-    'coreadelsur',
+let arrayRespuestasMedio = ['dioxidodecarbono',
+    'sol',
+    'fotosintesis',
+    'reutilizables',
+    'inundacion',
+    'carton',
+    'bicicleta',
+    'viento',
+    'agua',
+    'tierra',
+]
+
+let arrayRespuestasDificil = ['efectoinvernadero',
+    'metano',
+    'ozono',
+    'deshielo',
     'condensacion',
-    '1989',
+    'aluminio',
     'neutron',
-    'loro',
-    'plasma',
-    'fagot',
+    'solar',
+    'fosiles',
+    'acuerdodeparis',
 ]
 
 
@@ -165,6 +165,8 @@ function comprobarLetra(){
     let palabraAdivinar = Array(respuesta.length).fill('_')
     buttonAdivina.addEventListener('click', () => {
         let valor = document.getElementById('input-letra').value.toLowerCase()
+        let inputLetra = document.getElementById('input-letra')
+        inputLetra.value = ''
         let letraCorrecta = false
         let numerosLetras = /^[a-zA-Z0-9]+$/
         if(!numerosLetras.test(valor)){
@@ -196,8 +198,9 @@ function comprobarLetra(){
 function comprobarDerrota(){
     let inputLetra = document.getElementById('input-letra')
     if(fallos >= maxFallos){
-        message.textContent = `¡Has perdido todas la vidas! La respuesta era: ${respuesta}`
+        message.textContent = `¡Has perdido todas la vidas! La respuesta era --> ${respuesta}`.toUpperCase()
         buttonAdivina.disabled = true
+        buttonAdivina.style.pointerEvents = 'none'
         buttonRestart.style.display = 'block'
         inputLetra.disabled = true
         musicaFondo.pause();
@@ -217,6 +220,7 @@ function comprobarVictoria(){
         musicaFondo.currentTime = 0;
         win.play()
         buttonAdivina.disabled = true
+        buttonAdivina.style.pointerEvents = 'none'
         buttonRestart.style.display = 'block'
         inputLetra.disabled = true
         buttonRestart.addEventListener('click', () => {
@@ -316,7 +320,7 @@ function dibujarAhorcado(){
 
 
 function comprobarDificultad(){
-    let nivelDificultad = prompt('Introduce el nivel de dificultad').toLowerCase()
+    let nivelDificultad = prompt('Introduce el nivel de dificultad -> facil | medio | dificil').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim()
     if(nivelDificultad === 'facil'){
         iniciarGame(nivelDificultad)
     }else if(nivelDificultad === 'medio'){
@@ -326,7 +330,7 @@ function comprobarDificultad(){
     }else{
         while(nivelDificultad !== 'facil' && nivelDificultad !== 'medio' && nivelDificultad !== 'dificil'){
             alert('No ha introducido una dificultad correcta')
-            nivelDificultad = prompt('Introduce el nivel de dificultad').toLowerCase()
+            nivelDificultad = prompt('Introduce el nivel de dificultad -> facil | medio | dificil').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim()
         }
         iniciarGame(nivelDificultad)
     }

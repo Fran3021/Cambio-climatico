@@ -1070,10 +1070,28 @@ BREAKPOINTS (MEDIA QUERIES)
   }
 }
 
+@media(width >=1280px){
+  #main-juego #container-input-restart #container-input #adivina-palabra:hover{
+    background-color: red;
+    color: black;
+  }
+  #main-juego #container-input-restart #container-restart #restart-button:hover{
+    background-color: black;
+    color: red;
+  }
+}
+
 @media(width >= 1512px){
   #main-juego h2{
     font-size: 40px;
     margin-bottom: 60px;
+    transition-property: color, text-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+  }
+  #main-juego h2:hover{
+    color: yellow;
+    text-shadow: 5px 5px 10px var(--blue);
   }
   #main-juego #container-letras-canvas #container-letras{
     gap: 40px;
